@@ -1,0 +1,493 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+/*::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}*/
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+audio, canvas, iframe, img, svg, video {
+    vertical-align: middle;
+}
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+textarea {
+    resize: vertical;
+}
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+/*_____________________________ Media queries __________________________________*/
+
+
+/*_______Smartphones_______*/
+
+@media only screen and (max-width: 320px) {
+    /*=======Styles go here=======*/
+    body {
+        background: #fff;
+    }
+    figure img {
+        width: 120px;
+        height: 120px;
+        padding: 20px 20px;
+        text-align: center;
+    }
+    li {
+        display: block;
+    }
+}
+
+/*_______Tablets______*/
+
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+    /*=======Styles go here=======*/
+
+		#figure .section_achivements {
+		flex-direction: column;
+		margin: 0 auto;
+		}
+}
+
+/*_______Medium devices______*/
+
+@media only screen and (min-width: 481px) and (max-width: 1200px) {
+    body {
+        background: #c6d8a6;
+    }
+}
+
+/*_____________________________________________________________________body___*/
+
+
+
+
+/******************************************************************************/
+/**************************** index.html **********************************/
+/******************************************************************************/
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #E6D8A1;
+    font-family: 'Prompt', sans-serif;
+}
+
+/*______________________________________________________________________nav___*/
+
+header {
+    background-color: #fff;
+    height: 60px;
+}
+li {
+    float: left;
+		padding-right: 40px;
+		list-style-type: none;
+		font-weight: bold;
+		color: #222222;
+}
+a {
+    text-decoration: none;
+    color: #222222;
+}
+td {
+    height: 300px;
+    text-align: center;
+}
+nav {
+    margin: 0px 0px;
+
+}
+/*____________________________________________________________________/ nav___*/
+
+
+/*__________________________________________________________________section___*/
+
+figure .index_photo {
+    width: 220px;
+    height: 370px;
+    border-radius: 150px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    background: url(img/photo_JB.jpg) no-repeat;
+    box-shadow: 20px 20px 5px #534228;
+    -webkit-box-shadow: 20px 20px 5px #534228;
+    -moz-box-shadow: 20px 20px 5px #534228;
+}
+h1 {
+    font-family: 'Concert One', cursive;
+    color: #534228;
+    text-shadow: 2px 2px #9898A2;
+}
+#section {
+    width: 50%;
+}
+.container1 {
+    float: left;
+    padding: 20px;
+}
+.container2 {
+    float: left;
+    padding: 150px 100px;
+    padding-top: 20px;
+}
+/******************************************************************************/
+/**************************** biograpĥy.html **********************************/
+/******************************************************************************/
+
+b {
+    color: #222222;
+}
+img .sky_pic {
+    width: 100%;
+}
+.section1 {
+    display: flex;
+    /* or inline-flex */
+    flex-wrap: wrap;
+    width: 70%;
+    margin: auto;
+    padding: 5px 5px;
+    text-align: center;
+    justify-content: center;
+}
+.section01_biography {
+    border-radius: 200px;
+    background-repeat: no-repeat;
+    padding: 20px 20px;
+    box-shadow: 20px 20px 5px #534228;
+    width: 100%;
+    background-color: #fff;
+
+    float: right;
+    margin: 20px 0px 0px 0px;
+}
+.section02_biography {
+    border-radius: 200px;
+    padding: 20px;
+    box-shadow: 20px 20px 5px #534228;
+    width: 37%;
+    background-color: #fff;
+    text-align: center;
+    justify-content: space-around;
+    margin: 20px 0px 10px 0px;
+}
+.section03_biography {
+    border-radius: 200px;
+    background-repeat: no-repeat;
+    padding: 20px 20px;
+    box-shadow: 20px 20px 5px #534228;
+    width: 100%;
+    background-color: #fff;
+
+    float: left;
+    margin: 20px 0px 0px 0px;
+}
+.section04_biography {
+    border-radius: 200px;
+    background-repeat: no-repeat;
+    padding: 20px;
+    box-shadow: 20px 20px 5px #534228;
+    width: 37%;
+    background-color: #fff;
+    text-align: center;
+    float: left;
+    margin: 20px 0px 30px 0px;
+}
+
+/*________________________________________________________________/ section___*/
+
+/*_____ flags _ section _________*/
+
+.section02_biography a img {
+    height: 30px;
+    width: 60px;
+    padding: 4px;
+}
+.section04_biography a img {
+    height: 30px;
+    width: 60px;
+}
+
+
+
+/******************************************************************************/
+/**************************** achivements.html ********************************/
+/******************************************************************************/
+
+.first_batch_achivements,
+.second_batch_achivements{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+.section_achivements {
+    width: 70%;
+    margin: auto;
+    padding: 5px 5px;
+
+		flex-wrap: wrap;
+		justify-content: space-around;
+
+}
+.section01_achivements,
+.section02_achivements,
+.section03_achivements,
+.section04_achivements,
+.section05_achivements,
+.section06_achivements {
+    border-radius: 200px;
+    padding: 20px;
+    box-shadow: 20px 20px 5px #534228;
+    width: 44%;
+    background-color: #fff;
+    text-align: left;
+    margin: 30px 10px 5px 0px;
+}
+.section04_achivements,
+.section05_achivements,
+.section06_achivements {
+    margin: 30px 10px 30px 0px;
+		padding-top: 30px;
+		padding-bottom: 30px;
+}
+/******************************************************************************/
+/**************************** goals.html **************************************/
+/******************************************************************************/
+
+.container_goals {
+			width: 80%;
+	    margin: 0 auto 0 auto;
+	    padding: 5px 5px;
+			display: flex;
+			flex-direction: column;
+		align-content: center;
+		}
+																								/*C A R O U S E L  starts here*/
+ .carouselbox {
+
+      width: 700px;
+      position: relative;
+      margin: 1em;
+      border: 1px solid #ccc;
+      box-shadow: 2px 2px 10px #ccc;
+      overflow: hidden;
+
+    }
+    .content {
+      margin: 0;
+      padding: 0;
+    }
+    .content li {
+      font-size: 350px;
+
+      width: 100%;
+      list-style: none;
+      text-align: center;
+      z-index: 2;
+    }
+    .active {
+      height: 400px;
+			margin: 0px auto 0px auto;
+
+    }
+    .carouselbox button {
+      border: none;
+      visibility: hidden;
+    }
+    .active button {
+      visibility: visible;
+    }
+    .offscreen {
+      position: absolute;
+      left: -2000px;
+    }
+    .active .buttons {
+      padding: 5px 0;
+      background: #eee;
+      text-align: center;
+      z-index: 10;
+      position: relative;
+    }
+    .active li {
+      position: absolute;
+      top: 10px;
+      opacity: 0;
+      transform: scale(0);
+      transition: 1s;
+    }
+    .active li.current {
+      top: 0px;
+      opacity: 1;
+      transform: scale(1);
+      transition: 1s;
+
+
+    }
+		.lang{
+			text-align: center;
+			text-shadow: 2px;
+		}
+
+
+/*C A R O U S E L  ends here*/
+
+
+/******************************************************************************/
+/**************************** FOOTER ******************************************/
+/******************************************************************************/
+
+footer {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    align-content: space-around;
+    margin-top: auto;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    color: #222222;;
+    background-color: #fff;
+		font-weight: bold;
+}
+/*_________________________________________________________________/ footer___*/
+
+
+/*___________________________________________________________________/ body___*/
+
+
+/* ****************************************************************************
+   Media Queries
+   ************************************************************************** */
+
+
+/*@media only screen and (min-width: 35em) {
+
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
+}*/
+
+
+/* *****************************************************************************
+   Helper classes
+   ************************************************************************** */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+.invisible {
+    visibility: hidden;
+}
+.clearfix:before, .clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+
+/* *****************************************************************************
+   Print styles
+  *************************************************************************** */
+
+@media print {
+    *, *:before, *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+    a, a:visited {
+        text-decoration: underline;
+    }
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+    a[href^="#"]:after, a[href^="javascript:"]:after {
+        content: "";
+    }
+    pre, blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+    thead {
+        display: table-header-group;
+    }
+    tr, img {
+        page-break-inside: avoid;
+    }
+
+    p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+    }
+    h2, h3 {
+        page-break-after: avoid;
+    }
+}
