@@ -1,9 +1,9 @@
 /*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
 
-    color: #222;
-    font-size: 1em;
+
 html {
     line-height: 1.4;
+    text-align: center;
 }
 ::-moz-selection {
     background: #b3d4fc;
@@ -70,7 +70,7 @@ textarea {
 @media only screen and (min-width: 321px) and (max-width: 480px) {
     /*=======Styles go here=======*/
 
-		#figure .section_achivements {
+		#figure .section_achievements {
 		flex-direction: column;
 		margin: 0 auto;
 		}
@@ -99,14 +99,18 @@ body {
     min-height: 100vh;
     background-color: #E6D8A1;
     font-family: 'Prompt', sans-serif;
-    width: 70%;
+    width: 80%;
+    margin-left:auto;
+    margin-right:auto;
+
 }
 
 /*______________________________________________________________________nav___*/
 
 header {
     background-color: #fff;
-    height: 60px;
+    height: 20%;
+
 }
 li {
     float: left;
@@ -114,6 +118,14 @@ li {
 		list-style-type: none;
 		font-weight: bold;
 		color: #222222;
+}
+
+li:hover {
+    background-color: #E6D8A1;
+}
+
+ul {
+    padding-bottom: 20px;
 }
 a {
     text-decoration: none;
@@ -124,10 +136,10 @@ td {
     text-align: center;
 }
 nav {
-    margin: 0px 0px;
-
+    margin: 10px 0;
 }
-ul.navig li a: hoover{
+
+ul.nav li a: hoover{
     background-color: yellow;
 }
 
@@ -152,17 +164,19 @@ h1 {
     color: #534228;
     text-shadow: 2px 2px #9898A2;
 }
-#section {
-    width: 50%;
+.main_section_index{
+display: flex;
+    flex-direction:row;
+    justify-content: space-around;
 }
-.container1 {
+.container1_index{
     float: left;
-    padding: 20px;
+    width: 30%;
+
 }
-.container2 {
-    float: left;
-    padding: 150px 100px;
-    padding-top: 20px;
+.container2_index{
+
+    width: 30%;
 }
 /******************************************************************************/
 /**************************** biograpĥy.html **********************************/
@@ -171,8 +185,9 @@ h1 {
 b {
     color: #222222;
 }
-img .sky_pic {
-    width: 100%;
+.sky_pic {
+   width: 100%;
+
 }
 .section1 {
     display: flex;
@@ -193,7 +208,7 @@ img .sky_pic {
     background-color: #fff;
 
     float: right;
-    margin: 20px 0px 0px 0px;
+    margin: 20px 0 0 0;
 }
 .section02_biography {
     border-radius: 200px;
@@ -203,7 +218,7 @@ img .sky_pic {
     background-color: #fff;
     text-align: center;
     justify-content: space-around;
-    margin: 20px 0px 10px 0px;
+    margin: 20px 0 10px 0;
 }
 .section03_biography {
     border-radius: 200px;
@@ -214,7 +229,7 @@ img .sky_pic {
     background-color: #fff;
 
     float: left;
-    margin: 20px 0px 0px 0px;
+    margin: 20px 0 0 0;
 }
 .section04_biography {
     border-radius: 200px;
@@ -225,7 +240,7 @@ img .sky_pic {
     background-color: #fff;
     text-align: center;
     float: left;
-    margin: 20px 0px 30px 0px;
+    margin: 20px 0 30px 0;
 }
 
 /*________________________________________________________________/ section___*/
@@ -245,11 +260,11 @@ img .sky_pic {
 
 
 /******************************************************************************/
-/**************************** achivements.html ********************************/
+/**************************** achievements.html ********************************/
 /******************************************************************************/
 
-.first_batch_achivements,
-.second_batch_achivements{
+.first_batch_achievements,
+.second_batch_achievements{
   padding: 0;
   margin: 0;
   list-style: none;
@@ -263,7 +278,7 @@ img .sky_pic {
   -webkit-flex-flow: row wrap;
   justify-content: space-around;
 }
-.section_achivements {
+.section_achievements {
     width: 70%;
     margin: auto;
     padding: 5px 5px;
@@ -272,24 +287,24 @@ img .sky_pic {
 		justify-content: space-around;
 
 }
-.section01_achivements,
-.section02_achivements,
-.section03_achivements,
-.section04_achivements,
-.section05_achivements,
-.section06_achivements {
+.section01_achievements,
+.section02_achievements,
+.section03_achievements,
+.section04_achievements,
+.section05_achievements,
+.section06_achievements {
     border-radius: 200px;
     padding: 20px;
     box-shadow: 20px 20px 5px #534228;
     width: 44%;
     background-color: #fff;
     text-align: left;
-    margin: 30px 10px 5px 0px;
+    margin: 30px 10px 5px 0;
 }
-.section04_achivements,
-.section05_achivements,
-.section06_achivements {
-    margin: 30px 10px 30px 0px;
+.section04_achievements,
+.section05_achievements,
+.section06_achievements {
+    margin: 30px 10px 30px 0;
 		padding-top: 30px;
 		padding-bottom: 30px;
 }
@@ -329,8 +344,8 @@ img .sky_pic {
       z-index: 2;
     }
     .active {
-      height: 400px;
-			margin: 0px auto 0px auto;
+      height: 440px;
+			margin: 0 auto 0 auto;
 
     }
     .carouselbox button {
@@ -359,7 +374,7 @@ img .sky_pic {
       transition: 1s;
     }
     .active li.current {
-      top: 0px;
+      top: 0;
       opacity: 1;
       transform: scale(1);
       transition: 1s;
@@ -370,6 +385,9 @@ img .sky_pic {
 			text-align: center;
 			text-shadow: 2px;
 		}
+        .current{
+            height: 20%;
+        }
 
 
 /*C A R O U S E L  ends here*/
@@ -380,7 +398,7 @@ img .sky_pic {
 
 .email{
  position: fixed;
-  top: 50%;
+  top: 60%;
   left: 50%;
   /* bring your own prefixes */
   transform: translate(-50%, -50%);

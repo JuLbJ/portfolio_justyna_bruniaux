@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="faeb6aa0-6cf1-410a-bd57-28672a1de9d4" name="vps" url="http://www.justyna-bruniaux.fr">
+        <fileTransfer host="51.254.141.25" port="22" rootFolder="/home/justynabruniaux/www" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
