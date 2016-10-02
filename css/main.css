@@ -4,6 +4,7 @@
 html {
     line-height: 1.4;
     text-align: center;
+    background-color: #ffffff;
 }
 ::-moz-selection {
     background: #b3d4fc;
@@ -13,14 +14,7 @@ html {
     background: #b3d4fc;
     text-shadow: none;
 }*/
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-}
+
 audio, canvas, iframe, img, svg, video {
     vertical-align: middle;
 }
@@ -49,6 +43,8 @@ textarea {
 
 /*_______Smartphones_______*/
 
+
+
 @media only screen and (max-width: 320px) {
     /*=======Styles go here=======*/
     body {
@@ -63,22 +59,51 @@ textarea {
     li {
         display: block;
     }
+    .section_achievements,
+    .first_batch_achievements {
+        display: flex;
+        flex-direction: column;
+    }
+    .section_achievements,
+    .second_batch_achievements {
+        display: flex;
+        flex-direction: column;
+    }
+    .section01_achievements,
+    .section02_achievements,
+    .section03_achievements,
+    .section04_achievements,
+    .section05_achievements,
+    .section06_achievements {
+        width: 100%;
+    }
 }
 
 /*_______Tablets______*/
 
-@media only screen and (min-width: 321px) and (max-width: 480px) {
+@media only screen and (max-width: 480px) {
     /*=======Styles go here=======*/
 
-		#figure .section_achievements {
-		flex-direction: column;
-		margin: 0 auto;
-		}
+    #figure .section_achievements {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .section_achievements,
+    .first_batch_achievements {
+        display: flex;
+        flex-direction: column;
+    }
+    .section_achievements,
+    .second_batch_achievements {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 /*_______Medium devices______*/
 
-@media only screen and (min-width: 481px) and (max-width: 1200px) {
+@media only screen and (max-width: 1200px) {
     body {
         background: #c6d8a6;
     }
@@ -97,7 +122,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: #E6D8A1;
+    background-color: #FFD43B;
     font-family: 'Prompt', sans-serif;
     width: 80%;
     margin-left:auto;
@@ -108,16 +133,16 @@ body {
 /*______________________________________________________________________nav___*/
 
 header {
-    background-color: #fff;
+    background-color: #FFD43B;
     height: 20%;
 
 }
 li {
     float: left;
-		padding-right: 40px;
-		list-style-type: none;
-		font-weight: bold;
-		color: #222222;
+    padding-right: 40px;
+    list-style-type: none;
+    font-weight: bold;
+    color: #222222;
 }
 
 li:hover {
@@ -130,6 +155,7 @@ ul {
 a {
     text-decoration: none;
     color: #222222;
+
 }
 td {
     height: 300px;
@@ -139,8 +165,11 @@ nav {
     margin: 10px 0;
 }
 
-ul.nav li a: hoover{
+ul.nav li a:hoover{
     background-color: yellow;
+}
+hr{
+    color: #534228;
 }
 
 /*____________________________________________________________________/ nav___*/
@@ -179,11 +208,11 @@ display: flex;
     width: 30%;
 }
 /******************************************************************************/
-/**************************** biograpĥy.html **********************************/
+/**************************** biography.html **********************************/
 /******************************************************************************/
 
 b {
-    color: #222222;
+    color: #FFD43B;;
 }
 .sky_pic {
    width: 100%;
@@ -214,7 +243,7 @@ b {
     border-radius: 200px;
     padding: 20px;
     box-shadow: 20px 20px 5px #534228;
-    width: 37%;
+    width: 43%;
     background-color: #fff;
     text-align: center;
     justify-content: space-around;
@@ -236,7 +265,7 @@ b {
     background-repeat: no-repeat;
     padding: 20px;
     box-shadow: 20px 20px 5px #534228;
-    width: 37%;
+    width: 43%;
     background-color: #fff;
     text-align: center;
     float: left;
@@ -268,7 +297,6 @@ b {
   padding: 0;
   margin: 0;
   list-style: none;
-
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -279,13 +307,11 @@ b {
   justify-content: space-around;
 }
 .section_achievements {
-    width: 70%;
+    width: 80%;
     margin: auto;
     padding: 5px 5px;
-
-		flex-wrap: wrap;
-		justify-content: space-around;
-
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 .section01_achievements,
 .section02_achievements,
@@ -297,9 +323,11 @@ b {
     padding: 20px;
     box-shadow: 20px 20px 5px #534228;
     width: 44%;
-    background-color: #fff;
+    background-color: #2E2E2D;
     text-align: left;
-    margin: 30px 10px 5px 0;
+    color: #ffffff;
+    font-weight: 600;
+    margin: 30px 10px 20px 0;
 }
 .section04_achievements,
 .section05_achievements,
@@ -397,17 +425,44 @@ b {
 /******************************************************************************/
 
 .email{
- position: fixed;
-  top: 60%;
+
+  top: 70%;
   left: 50%;
   /* bring your own prefixes */
   transform: translate(-50%, -50%);
-		font-weight: bold;
+  font-weight: bold;
 
-		  font-family: 'Concert One', cursive;
-	    color: #534228;
-	    text-shadow: 2px 2px #9898A2;
-			font-size: 30px;
+   font-family: 'Concert One', cursive;
+   color: #534228;
+   text-shadow: 2px 2px #9898A2;
+   font-size: 30px;
+}
+.main_contact{
+    margin-top: 70%;
+}
+/******************************************************************************/
+
+/******************************************************************************/
+/***************       shared properties of c l a s s e s        **************/
+/******************************************************************************/
+
+
+.section01_biography,
+.section02_biography,
+.section03_biography,
+.section04_biography,
+.section01_achievements,
+.section02_achievements,
+.section03_achievements,
+.section04_achievements,
+.section05_achievements,
+.section06_achievements {
+border-radius: 200px;
+box-shadow: 20px 20px 5px #534228;
+background-color: #2E2E2D;
+text-align: center;
+color: #ffffff;
+font-weight: 600;
 }
 
 
@@ -425,30 +480,13 @@ footer {
     padding-bottom: 20px;
     padding-top: 20px;
     color: #222222;;
-    background-color: #fff;
-		font-weight: bold;
+    background-color: #FFD43B;
+	font-weight: bold;
 }
 /*_________________________________________________________________/ footer___*/
 
 
 /*___________________________________________________________________/ body___*/
-
-
-/* ****************************************************************************
-   Media Queries
-   ************************************************************************** */
-
-
-/*@media only screen and (min-width: 35em) {
-
-}
-
-@media print,
-       (-o-min-device-pixel-ratio: 5/4),
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 120dpi) {
-
-}*/
 
 
 /* *****************************************************************************
