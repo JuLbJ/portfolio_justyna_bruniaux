@@ -77,6 +77,9 @@ textarea {
     .section06_achievements {
         width: 100%;
     }
+    .main_section_index{
+        display: block;
+    }
 }
 
 /*_______Tablets______*/
@@ -98,6 +101,12 @@ textarea {
     .second_batch_achievements {
         display: flex;
         flex-direction: column;
+    }
+    .main_section_index{
+        display: inline-block;
+        flex-wrap: wrap;
+        align-content: center;
+
     }
 }
 
@@ -127,9 +136,10 @@ body {
     width: 80%;
     margin-left:auto;
     margin-right:auto;
-
 }
-
+strong {
+    color: #534228;
+}
 /*______________________________________________________________________nav___*/
 
 header {
@@ -194,7 +204,7 @@ h1 {
     text-shadow: 2px 2px #9898A2;
 }
 .main_section_index{
-display: flex;
+    display: flex;
     flex-direction:row;
     justify-content: space-around;
 }
@@ -212,7 +222,7 @@ display: flex;
 /******************************************************************************/
 
 b {
-    color: #FFD43B;;
+    color: #FFD43B;
 }
 .sky_pic {
    width: 100%;
@@ -341,16 +351,14 @@ b {
 /******************************************************************************/
 
 .container_goals {
-			width: 80%;
+        width: 80%;
 	    margin: 0 auto 0 auto;
 	    padding: 5px 5px;
-			display: flex;
-			flex-direction: column;
-		align-content: center;
-		}
-																								/*C A R O U S E L  starts here*/
- .carouselbox {
+        display: flex;
+        align-items: center;
 
+		}																								/*C A R O U S E L  starts here*/
+ .carouselbox {
       width: 700px;
       position: relative;
       margin: 1em;
@@ -365,7 +373,6 @@ b {
     }
     .content li {
       font-size: 350px;
-
       width: 100%;
       list-style: none;
       text-align: center;
@@ -373,7 +380,7 @@ b {
     }
     .active {
       height: 440px;
-			margin: 0 auto 0 auto;
+      margin: 0 auto 0 auto;
 
     }
     .carouselbox button {
@@ -406,8 +413,6 @@ b {
       opacity: 1;
       transform: scale(1);
       transition: 1s;
-
-
     }
 		.lang{
 			text-align: center;
